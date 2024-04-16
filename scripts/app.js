@@ -129,7 +129,7 @@ correctAnswers.forEach((answer, index) => {
     letterBlock.classList.add('letter-block');
 
     const input = document.createElement('input');
-    input.type = 'text';
+    input.type = 'numeric';
     input.maxLength = 1;
     input.classList.add('answer');
 
