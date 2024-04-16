@@ -129,8 +129,10 @@ correctAnswers.forEach((answer, index) => {
     letterBlock.classList.add('letter-block');
 
     const input = document.createElement('input');
-    input.type = 'text';
+    input.type = 'number';
     input.maxLength = 1;
+    input.pattern = '[0-9]*';
+    input.inputmode = 'numeric';
     input.classList.add('answer');
 
     input.addEventListener('input', function() {
