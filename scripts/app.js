@@ -12,17 +12,6 @@ const questions = [
 const crosswordContainer = document.getElementById('crossword');
 const congrats = document.getElementById('message');
 
-const showImage = () => {
-  // Get the image element
-  const image = document.getElementById("image");
-  
-  // Change the display property to "block" to show the image
-  image.style.display = "block";
-};
-
-// Add event listener to the button
-document.getElementById("showButton").addEventListener("click", showImage);
-
 function checkAllAnswers() {
   const allRows = document.querySelectorAll('.row');
   const allCorrect = Array.from(allRows).every(row => row.classList.contains('correct'));
@@ -96,6 +85,13 @@ function checkAllAnswers() {
                     });
 
                     setTimeout(() => {
+                      const showImage = () => {
+                        const image = document.getElementById("image");
+                        image.style.display = "block";
+                      };
+                      
+                      document.getElementById("showButton").addEventListener("click", showImage);
+                      
                       congrats.innerHTML = `
                         <h3>Insa eu l-am reparat si-n locker ti l-am lasat!</h3>
                         <p><strong>Locker</strong> (vis-a-vis de usa de la baie): <code>6.330</code>
