@@ -12,6 +12,17 @@ const questions = [
 const crosswordContainer = document.getElementById('crossword');
 const congrats = document.getElementById('message');
 
+const showImage = () => {
+  // Get the image element
+  const image = document.getElementById("image");
+  
+  // Change the display property to "block" to show the image
+  image.style.display = "block";
+};
+
+// Add event listener to the button
+document.getElementById("showButton").addEventListener("click", showImage);
+
 function checkAllAnswers() {
   const allRows = document.querySelectorAll('.row');
   const allCorrect = Array.from(allRows).every(row => row.classList.contains('correct'));
