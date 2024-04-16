@@ -76,3 +76,7 @@ code {
 code, .message p {
     white-space: pre-line;
 }
+
+#image {
+    display: none;
+}
