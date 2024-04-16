@@ -87,7 +87,7 @@ function checkAllAnswers() {
                     setTimeout(() => {
                       congrats.innerHTML = `
                         <h3>Insa eu l-am reparat si-n locker ti l-am lasat!</h3>
-                        <p><strong>Locker</strong> (vis-a-vis de usa de la baie): 6.330</p>
+                        <p><strong>Locker</strong> (vis-a-vis de usa de la baie): <code>6.330</code></p>
                         <strong>Cod:</strong> 3003</p>
                       `;
                       congrats.style.display = 'block';
