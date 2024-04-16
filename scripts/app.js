@@ -88,7 +88,9 @@ function checkAllAnswers() {
                       congrats.innerHTML = `
                         <h3>Insa eu l-am reparat si-n locker ti l-am lasat!</h3>
                         <p><strong>Locker</strong> (vis-a-vis de usa de la baie): <code>6.330</code>
-                        <strong>Cod:</strong> 3003</p>
+                        <strong>Cod:</strong> <code>3003</code></p>
+                        <button id="showButton">Lasa vrajeala si arata-mi exact</button>
+                        <img id="image" src="https://i.postimg.cc/d0TygGZv/locker.jpg" alt="Image">
                       `;
                       congrats.style.display = 'block';
                     }, 500);
